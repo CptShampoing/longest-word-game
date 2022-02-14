@@ -1,0 +1,7 @@
+<h1><%= @letters.join%></h1>
+
+<form action="score" method="post">
+<input type="text" name="anwser" placeholder ="What's your proposition ?">
+<input type="submit" value="Submit">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
